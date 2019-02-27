@@ -34,7 +34,8 @@ body {
     height: 300px;
     bottom: 650px;
     margin-top: 150px;
-    background: none; 
+    background: none;
+    color: white;
 }
 
 #secondRect {
@@ -116,23 +117,28 @@ position: absolute;
 
 /* link colors*/
 a:link {
-  color: lime;
+  color: black;
     text-decoration: none;
 }
 
 /* visited link */
 a:visited {
-  color: lime;
+  color: black;
 }
 
 /* mouse over link */
 a:hover {
-  color: lime;
+  color: none;
+transition-property: font-size;
+  transition-property: color;
+  transition-duration: 0.3s;
+  font-size: 20px;
 }
 
 /* selected link */
 a:active {
-  color: lime;
+  color: none;
+}
 
     
 /* rainbow border 
@@ -149,6 +155,56 @@ a:active {
 
     brain gif
     content: url(https://media.giphy.com/media/oCeduRdJsNPMY/giphy.gif);
-    */
+ 
+    rainbow border */
     
+/* POLARIZED THINKING */
+
+#polarizedWhite {
+   background:white;
+    height:100%;
+    width: 50%;
+    font-family: chicago;
+    color: white;
+    text-align: center;
+    filter: blur(1px);
+    margin-top: auto;
+    margin-left: auto;
+    -webkit-animation-name: white; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+  animation-name: white;
+  animation-duration: 4s;
+}
+   
+    
+@keyframes white {
+  0%   {background-color: white;}
+  25%  {background-color: black;}
+  50%  {background-color: white;}
+  100% {background-color: black;}
+}
+
+
+#polarizedBlack{
+   background:black;
+    height:100%;
+    width: 50%;
+    font-family: chicago;
+    color: white;
+    text-align: center;
+    filter: blur(1px);
+    margin-top: auto;
+    margin-left: auto;
+    -webkit-animation-name: black; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+    animation-name: black;
+    animation-duration: 4s;
+}
+
+@keyframes black {
+  0%   {background-color: black;}
+  25%  {background-color: white;}
+  50%  {background-color: black;}
+  100% {background-color: white;}
+}
 
